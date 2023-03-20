@@ -25,14 +25,10 @@
     border: none;
     width: 300px;
     height: 500px;
-    display: inline-block;
-
-}
-.card{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: self-start;
+    align-items: start;
     padding: 20px;
     color: var(--Transparent-white-paragraphs);
     
@@ -83,4 +79,28 @@
 }
 .card-luxury input{
     color: var(--Very-dark-cyan);
+}
+
+
+@media (max-width:950px){
+    .conteine{
+        width: 100%;
+        height: 100%;
+        display:flex;
+        flex-direction: column;
+        justify-content: ;
+        align-items: center;
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+    .card{
+        width: 300px;
+        height: 400px;
+    }
+    .card-sedans{
+        border-radius: 10px 10px 0 0;
+    }
+    .card-luxury{
+        border-radius: 0 0 10px 10px ;
+    }
 }
